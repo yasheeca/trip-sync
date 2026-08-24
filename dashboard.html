@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard | TripSync</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="nav nav-light">
+      <a class="brand" href="index.html"
+        ><span class="brand-mark"> ✦</span><span>Trip<span>Sync</span></span></a
+      >
+      <div class="nav-links">
+        <a class="active" href="dashboard.html">My trips</a>
+        <a href="create-trip.html" class="button button-small button-dark"
+          >+ New trip</a
+        >
+      </div>
+      <button class="menu-toggle">☰</button>
+    </nav>
+    <main class="page-shell">
+      <div class="page-heading">
+        <div>
+          <p class="kicker">YOUR TRAVEL DESK</p>
+          <h1>All your trips,<br /><em>in one view.</em></h1>
+        </div>
+        <a class="button button-accent" href="create-trip.html"
+          >Create new trip <span>→</span></a
+        >
+      </div>
+      <div id="dashboardStats" class="stats-row"></div>
+      <section>
+        <div class="section-bar">
+          <h2>Your journeys</h2>
+          <div id="tripFilters" class="filters">
+            <button class="filter active" data-filter="all">All trips</button>
+            <button class="filter" data-filter="upcoming">Upcoming</button
+            ><button class="filter" data-filter="completed">Completed</button>
+          </div>
+        </div>
+        <div id="tripGrid" class="trip-grid"></div>
+      </section>
+    </main>
+    <footer class="footer footer-light">
+      <span>TripSync / Your plans, together</span
+      ><span>Stored locally in your browser</span>
+    </footer>
+    <script src="js/app.js"></script>
+    <script src="js/dashboard.js"></script>
+  </body>
+</html>
